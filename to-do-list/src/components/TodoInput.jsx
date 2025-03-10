@@ -10,7 +10,7 @@ const TodoInput = ({setStore , store}) => {
         {
             console.log("task added" , task);
             // setStore([...store, task]);   check it again
-            setStore((prevStore) => [...prevStore, task]);  // ✅ Use task instead of newTask
+            setStore((prevStore) => [...prevStore, task]);
             setTask('');
         }
     }

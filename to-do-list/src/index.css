@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import 'remixicon/fonts/remixicon.css';
 body {
   background-color: #AB4459;
 }
@@ -16,8 +17,11 @@ input{
   font-size: 14px;
   margin-left: 10%;
   background-color: #AB4459;
-  
   border-radius: 2px;
+  transition: transform 0.3s ease-in-out;
+}
+.addtaskbtn:hover{
+  transform: scale(0.9);
 }
 .todocard{
   border: 1px solid black;
