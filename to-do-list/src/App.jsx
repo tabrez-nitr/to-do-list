@@ -3,11 +3,6 @@ import TodoInput from "./components/ToDoInput";
 import TodoList from "./components/TodoList";
 
 const App = () => {
-  // const [store, setStore] = useState([]);
-  // useEffect(() => {
-  //   const storedTask = JSON.parse(localStorage.getItem('tasks'))||[];
-  //   setStore(storedTask);
-  // },[]); // use effect when page loads and get value from local storage
 
   const [store, setStore] = useState(() => {
     return JSON.parse(localStorage.getItem("tasks")) || [];

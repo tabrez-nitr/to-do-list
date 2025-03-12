@@ -6,11 +6,11 @@ const TodoInput = ({setStore , store}) => {
     
     const handleSubmit = (e) => {
         e.preventDefault();
-        if(task !== '')
+        if(task.trim() !== '')
         {
             console.log("task added" , task);
-            // setStore([...store, task]);   check it again
-            setStore((prevStore) => [...prevStore, task]);
+
+            setStore((prevStore) => [...prevStore, task.trim()]);
             setTask('');
         }
     }
@@ -20,7 +20,7 @@ const TodoInput = ({setStore , store}) => {
     }
     return ( 
         <div className="mt-7 mb-8 w-full">
-          <form className="w-full" onSubmit={handleSubmit}> 
+          <form id="form" className="w-full" onSubmit={handleSubmit}> 
             <input 
             value={task} 
             type="text" 

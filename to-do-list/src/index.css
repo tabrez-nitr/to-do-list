@@ -18,7 +18,7 @@ input{
   margin-left: 10%;
   background-color: #AB4459;
   border-radius: 2px;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.1s ease-in-out;
 }
 .addtaskbtn:hover{
   transform: scale(0.9);
@@ -29,4 +29,8 @@ input{
   border-radius: 2px;
   background-color: #AB4459;
   margin-bottom:  8px;
+  transition: transform 0.1s ease-in-out;
+}
+.todocard:hover{
+  transform: scale(1.02);
 }
